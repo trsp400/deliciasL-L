@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Delícias L & L</title>
+
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/cards.css">
+    <link rel="stylesheet" href="assets/css/doces.css">
+
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    
+
+    <script>
+    
+        
+        function fContato(){
+            window.location.href = "contato.html";
+        }
+       
+       function fSaibaMais(){
+         window.location.href = "sobre.html";
+       }
+        
+    </script>
+
+</head>
+<body class="d-flex flex-column h-100">
+    <div class="container">
+        
+        
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #ffffff;">
+            <img src="assets/images/logo.jpg" class="img-fluid" id='logo-center' alt="Responsive image">
+            <a class="navbar-brand" href="index.html">Delícias L&L</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <style>
+              
+            </style>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                <a class="nav-link" href="index.html">Início<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="doces.html">Doces</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="galeria.html">Galeria</a>
+                </li>
+                
+                <li class="nav-item">
+                <a class="nav-link" href="sobre.html">Sobre</a>
+                </li>
+
+                <li class="nav-item" style="float: right !important;">
+                    <button type="button" class="btn btn-outline-primary" onclick="javascript:fContato()" >Entre em contato</button>
+                    <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#modal-login" >Faça o Login</button>
+                </li>
+                
+            </div>
+        </nav>
+        <main>
+            
+           
+            <div class="container-fluid" style="text-align: center; margin-bottom: 4%;">
+            
+              <h1 class="display-2" >Galeria</h1>
+              <div class="col-lg-6" style="margin: 0 auto;">
+                <div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators3" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators3" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators3" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleIndicators3" data-slide-to="3"></li>
+                        <li data-target="#carouselExampleIndicators3" data-slide-to="4"></li>
+                        <li data-target="#carouselExampleIndicators3" data-slide-to="5"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox" style="align-items: center; max-width: 100% !important; max-height: 60% !important;">
+                        <div class="carousel-item active">
+                            <img class="img-responsive" src="assets/images/trufas1.jpg" alt="First slide" style="width: 100% !important; height: 10% !important;">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2>Trufas</h2>
+                            </div>
+                            
+                        </div>
+                        <div class="carousel-item">
+                            <img class="img-responsive" src="assets/images/trufas2.jpg" alt="Second slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2>Trufas</h2>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="img-responsive" src="assets/images/trufas3.jpg" alt="Third slide" style="width: 100%;">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2>Trufas</h2>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                          <img class="img-responsive" src="assets/images/doces1.jpg" alt="Third slide" style="width: 100%;">
+                          <div class="carousel-caption d-none d-md-block">
+                            <h2>Doces Diversos</h2>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <img class="img-responsive" src="assets/images/ovos1.jpg" alt="Third slide" style="width: 100%;">
+                          <div class="carousel-caption d-none d-md-block">
+                            <h2>Ovos de Páscoa recheados</h2>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <img class="img-responsive" src="assets/images/ovos2.jpg" alt="Third slide" style="width: 100%;">
+                          <div class="carousel-caption d-none d-md-block">
+                            <h2>Ovos de Páscoa recheados</h2>
+                          </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators3" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+              </div>
+            </div>
+                        
+        </main>
+    </div>
+
+    <!--TELA MODAL DE LOGIN -->
+    <div class="modal fade" id="modal-login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Realizar Login</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
+          <div class="modal-body">
+              <form>
+                  <div class="form-group">
+                      <label for="exampleInputEmail1">Usuário ou Email</label>
+                      <input type="email" class="form-control" id="user" aria-describedby="emailHelp">
+                      <small id="emailHelp" class="form-text text-muted">Nós nunca vamos compartilhar seu email com outras pessoas</small>
+                  </div>
+                  <div class="form-group">
+                      <label for="exampleInputPassword1">Senha</label>
+                      <input type="password" class="form-control" id="senha">
+                  </div>
+                  <div class="form-group form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Permanecer logado?</label>
+                  </div>
+                  <button type="submit" class="btn btn-primary" id="login-submit">Fazer Login</button>
+              </form>
+
+              <div class="alert alert-warning alert-dismissible fade show" role="alert" id="alert-login-user" style="margin-top: 2%;">
+                  <strong>Erro!</strong> Preencha o campo <strong>Usuário</strong>.
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="alert alert-warning alert-dismissible fade show" role="alert" id="alert-login-senha" style="margin-top: 2%;">
+                  <strong>Erro!</strong> Preencha o campo <strong>Senha</strong>.
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="alert alert-success alert-dismissible fade show" role="alert" id="alert-success" style="margin-top: 2%;">
+                  <strong>Sucesso!</strong> Realizando login...
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-info" data-target="#modal-cadastro" data-dismiss="modal" id="sem-conta">Não possui conta?</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Sair</button> 
+          </div>
+          </div>
+      </div>
+    </div>
+
+    <!-- MODAL CADASTRO -->
+    <div class="modal fade" id="modal-cadastro" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalScrollableTitle">Realizar Cadastro</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                  <label for="exampleInputEmail1">Usuário</label>
+                  <input type="email" class="form-control" id="user-cadastro" aria-describedby="emailHelp">
+                  <small id="emailHelp" class="form-text text-muted">Sem espaços ou letras maiúsculas</small>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email</label>
+                <input type="email" class="form-control" id="email-cadastro" aria-describedby="emailHelp">
+                <small id="emailHelp" class="form-text text-muted">Nós nunca vamos compartilhar seu email com outras pessoas</small>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Whatsapp</label>
+                <input type="email" class="form-control" id="telefone" aria-describedby="emailHelp">
+                <small id="emailHelp" class="form-text text-muted">Número para contato</small>
+              </div>
+              <div class="form-group">
+                  <label for="exampleInputPassword1">Senha</label>
+                  <input type="password" class="form-control" id="senha-cadastro">
+              </div>
+              <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" >
+                  <label class="form-check-label" for="exampleCheck1">Permanecer logado?</label>
+              </div>
+              <button type="submit" class="btn btn-primary" id="cadastro-submit">Cadastrar</button>
+            </form>
+
+            <div class="alert alert-warning alert-dismissible fade show" role="alert" id="alert-cadastro" style="margin-top: 2%; margin-bottom: 5%;">
+              <strong>Erro!</strong> Preencha todos os campos!
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="alert alert-success alert-dismissible fade show" role="alert" id="alert-success-cadastro" style="margin-top: 2%; margin-bottom: 5%;">
+              <strong>Sucesso!</strong> Conta Criada! Clique no botão abaixo para Realizar o Login.
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-info" data-target="#modal-cadastro" data-dismiss="modal" id="com-conta">Já possui conta?</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Sair</button> 
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+  <div class="foot"></div>
+
+  
+  <script src="assets/js/alert.js">
+  </script>
+
+
+</body>
+</html>

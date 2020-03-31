@@ -1,0 +1,20 @@
+.lit, .card{
+    margin: 3%;
+}
+.lit:hover{
+    
+    transition: all 200ms ease-in;
+    transition: all 200ms ease-out; 
+    box-shadow: 1px 1px 5px !important;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.big:hover {
+    
+    transition: all 200ms ease-in;
+    transition: all 200ms ease-out;
+    transform: scale(1.1);
+    cursor: pointer;
+    
+}

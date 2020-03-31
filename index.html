@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Delícias L & L</title>
+
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/cards.css">
+    <link rel="stylesheet" href="assets/css/doces.css">
+
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    
+
+    <script>
+    
+        
+        function fContato(){
+            window.location.href = "contato.html";
+        }
+       
+       function fSaibaMais(){
+         window.location.href = "sobre.html";
+       }
+        
+    </script>
+
+</head>
+<body class="d-flex flex-column h-100">
+    <div class="container">
+        
+        
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #ffffff;">
+            <img src="assets/images/logo.jpg" class="img-fluid" id='logo-center' alt="Responsive image">
+            <a class="navbar-brand" href="index.html">Delícias L&L</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <style>
+              
+            </style>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                <a class="nav-link" href="index.html">Início<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="doces.html">Doces</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="galeria.html">Galeria</a>
+                </li>
+                
+                <li class="nav-item">
+                <a class="nav-link" href="sobre.html">Sobre</a>
+                </li>
+
+                <li class="nav-item" style="float: right !important;">
+                    <button type="button" class="btn btn-outline-primary" onclick="javascript:fContato()" >Entre em contato</button>
+                    <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#modal-login" >Faça o Login</button>
+                </li>
+                
+            </div>
+        </nav>
+        <main>
+          <div class="alert alert-info alert-dismissible fade show" role="alert" style="margin-top: 5%;">
+            <strong>Veja</strong> nossa <strong> Galeria de fotos!</strong>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>  
+
+            <div class="cards-lit">
+                <div class="card-group">
+                    <div class="card lit" id="card-trufas" data-toggle="modal" data-target="#modal-trufas" data-placement="top" title="Clique para pedido rápido">
+                        <img src="assets/images/docinhos.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Trufas</h5>
+                        <p class="card-text">Trufas de todos os sabores, recheios e coberturas!</p>
+                        
+                      </div>
+                    </div>
+                    <div class="card lit" id="card-ovos" data-toggle="modal" data-target="#modal-ovos" data-placement="top" title="Clique para pedido rápido">
+                        <img src="assets/images/ovos.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Ovos de Páscoa</h5>
+                        <p class="card-text">Ovos de tamanhos e sabores variados. A criançada vai adorar!</p>
+                        
+                      </div>
+                    </div>
+                    <div class="card lit" id="card-mousse" data-toggle="modal" data-target="#modal-mousse" data-placement="top" title="Clique para pedido rápido">
+                        <img src="assets/images/mousse_limao.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Mousse de Limão</h5>
+                        <p class="card-text">Quem não gosta de um mousse docinho e geladinho em um dia quente, nao é? Uma delícia! </p>
+                        
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="jumbotron">
+                <h1 class="display-4">Delícias L&L</h1>
+                <p class="lead">Fazemos diversos kits!</p>
+                <p class="lead">Para adocicar suas festas e comemorações!</p>
+                <p class="lead">Entre em contato, faça sua pergunta ou deixa sua duvída!</p>
+                <hr class="my-4">
+                <p></p>
+                <button type="button" class="btn btn-outline-primary" onclick="javascript:fSaibaMais()" id="bOutline">Saiba Mais</button>
+            </div>           
+            
+            <div class="big">
+                <div class="card bg-dark text-white">
+                    <img src="assets/images/limao.jpg" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                      <h5 class="card-title">Torta de limão</h5>
+                      <p class="card-text">Tortinhas com pedaços de limão e a borda crocante!</p>
+                      <p class="card-text">Tamanhos e quantidades variados </p>
+                    </div>
+                </div>
+            </div>
+           
+
+        </main>
+    </div>
+    <!-- MODAL DE PEDIDO RÁPIDO DE TRUFAS -->
+    <div class="modal fade" id="modal-trufas" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Pedido rápido Trufas</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <label class="input-group-text" for="inputGroupSelect01">Quantidade</label>
+                  </div>
+                  <select class="custom-select" >
+                    <option selected>Escolha...</option>
+                    <option value="1">1</option>
+                    <option value="2">1</option>
+                    <option value="3">3</option>
+                    <option value="3">4</option>
+                    <option value="3">Mais do que 4</option>
+                  </select>
+                </div>
+                <label for="recipient-name" class="col-form-label">Seu Nome</label>
+                <input type="text" class="form-control" >
+              </div>
+              <div class="form-group">
+                <label for="message-text" class="col-form-label">Seu Telefone(Whatsapp)</label>
+                <input class="form-control" type="tel" name="" id="" placeholder="ex.: xx xxxxxxxxxx">
+              </div>
+            </form><div class="form-group">
+                <label for="message-text" class="col-form-label">Observações</label>
+                <textarea class="form-control" ></textarea>
+              </div>
+          </div>
+
+          <div class="alert alert-success alert-dismissible fade show alert-pedido" role="alert"  style="margin-top: 2%; margin-bottom: 5%;">
+                <strong>Pedido enviado com sucesso!</strong> Agora é só aguardar nosso contato!
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Sair</button>
+            <button type="button" class="btn btn-primary pedido" >Enviar Pedido</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL DE PEDIDO RÁPIDO DE OVOS DE PÁSCOA -->
+    <div class="modal fade" id="modal-ovos" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" >Pedido rápido Ovos de Páscoa</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <label class="input-group-text" for="inputGroupSelect01">Quantidade</label>
+                  </div>
+                  <select class="custom-select" >
+                    <option selected>Escolha...</option>
+                    <option value="1">1</option>
+                    <option value="2">1</option>
+                    <option value="3">3</option>
+                    <option value="3">4</option>
+                    <option value="3">Mais do que 4</option>
+                  </select>
+                </div>
+                <label for="recipient-name" class="col-form-label">Seu Nome</label>
+                <input type="text" class="form-control" >
+              </div>
+              <div class="form-group">
+                <label for="message-text" class="col-form-label">Seu Telefone(Whatsapp)</label>
+                <input class="form-control" type="tel" name="" id="" placeholder="ex.: xx xxxxxxxxxx">
+              </div>
+            </form><div class="form-group">
+                <label for="message-text" class="col-form-label">Observações</label>
+                <textarea class="form-control" ></textarea>
+              </div>
+          </div>
+
+          <div class="alert alert-success alert-dismissible fade show alert-pedido" role="alert"  style="margin-top: 2%; margin-bottom: 5%;">
+                <strong>Pedido enviado com sucesso!</strong> Agora é só aguardar nosso contato!
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Sair</button>
+            <button type="button" class="btn btn-primary pedido" >Enviar Pedido</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL DE PEDIDO RÁPIDO DE LIMÃO -->
+    <div class="modal fade" id="modal-mousse" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Pedido rápido Mouse de Limão</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <label class="input-group-text" for="inputGroupSelect01">Quantidade</label>
+                  </div>
+                  <select class="custom-select" >
+                    <option selected>Escolha...</option>
+                    <option value="1">1</option>
+                    <option value="2">1</option>
+                    <option value="3">3</option>
+                    <option value="3">4</option>
+                    <option value="3">Mais do que 4</option>
+                  </select>
+                </div>
+                <label for="recipient-name" class="col-form-label">Seu Nome</label>
+                <input type="text" class="form-control" >
+              </div>
+              <div class="form-group">
+                <label for="message-text" class="col-form-label">Seu Telefone(Whatsapp)</label>
+                <input class="form-control" type="tel" name="" id="" placeholder="ex.: xx xxxxxxxxxx">
+              </div>
+              <div class="form-group">
+                <label for="message-text" class="col-form-label">Observações</label>
+                <textarea class="form-control" ></textarea>
+              </div>
+            </form>
+          </div>
+
+          <div class="alert alert-success alert-dismissible fade show alert-pedido" role="alert"  style="margin-top: 2%; margin-bottom: 5%;">
+                <strong>Pedido enviado com sucesso!</strong> Agora é só aguardar nosso contato!
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Sair</button>
+            <button type="button" class="btn btn-primary pedido" >Enviar Pedido</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--TELA MODAL DE LOGIN -->
+    <div class="modal fade" id="modal-login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Realizar Login</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
+          <div class="modal-body">
+              <form>
+                  <div class="form-group">
+                      <label for="exampleInputEmail1">Usuário ou Email</label>
+                      <input type="email" class="form-control" id="user" aria-describedby="emailHelp">
+                      <small id="emailHelp" class="form-text text-muted">Nós nunca vamos compartilhar seu email com outras pessoas</small>
+                  </div>
+                  <div class="form-group">
+                      <label for="exampleInputPassword1">Senha</label>
+                      <input type="password" class="form-control" id="senha">
+                  </div>
+                  <div class="form-group form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Permanecer logado?</label>
+                  </div>
+                  <button type="submit" class="btn btn-primary" id="login-submit">Fazer Login</button>
+              </form>
+
+              <div class="alert alert-warning alert-dismissible fade show" role="alert" id="alert-login-user" style="margin-top: 2%;">
+                  <strong>Erro!</strong> Preencha o campo <strong>Usuário</strong>.
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="alert alert-warning alert-dismissible fade show" role="alert" id="alert-login-senha" style="margin-top: 2%;">
+                  <strong>Erro!</strong> Preencha o campo <strong>Senha</strong>.
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="alert alert-success alert-dismissible fade show" role="alert" id="alert-success" style="margin-top: 2%;">
+                  <strong>Sucesso!</strong> Realizando login...
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-info" data-target="#modal-cadastro" data-dismiss="modal" id="sem-conta">Não possui conta?</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Sair</button> 
+          </div>
+          </div>
+      </div>
+    </div>
+
+    <!-- MODAL CADASTRO -->
+    <div class="modal fade" id="modal-cadastro" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalScrollableTitle">Realizar Cadastro</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                  <label for="exampleInputEmail1">Usuário</label>
+                  <input type="email" class="form-control" id="user-cadastro" aria-describedby="emailHelp">
+                  <small id="emailHelp" class="form-text text-muted">Sem espaços ou letras maiúsculas</small>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email</label>
+                <input type="email" class="form-control" id="email-cadastro" aria-describedby="emailHelp">
+                <small id="emailHelp" class="form-text text-muted">Nós nunca vamos compartilhar seu email com outras pessoas</small>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Whatsapp</label>
+                <input type="email" class="form-control" id="telefone" aria-describedby="emailHelp">
+                <small id="emailHelp" class="form-text text-muted">Número para contato</small>
+              </div>
+              <div class="form-group">
+                  <label for="exampleInputPassword1">Senha</label>
+                  <input type="password" class="form-control" id="senha-cadastro">
+              </div>
+              <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" >
+                  <label class="form-check-label" for="exampleCheck1">Permanecer logado?</label>
+              </div>
+              <button type="submit" class="btn btn-primary" id="cadastro-submit">Cadastrar</button>
+            </form>
+
+            <div class="alert alert-warning alert-dismissible fade show" role="alert" id="alert-cadastro" style="margin-top: 2%; margin-bottom: 5%;">
+              <strong>Erro!</strong> Preencha todos os campos!
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="alert alert-success alert-dismissible fade show alert-pedido" role="alert"  style="margin-top: 2%; margin-bottom: 5%;">
+              <strong>Sucesso!</strong> Conta Criada! Clique no botão abaixo para Realizar o Login.
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-info" data-target="#modal-cadastro" data-dismiss="modal" id="com-conta">Já possui conta?</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Sair</button> 
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+  <div class="foot"></div>
+
+  
+  <script src="assets/js/alert.js">
+  </script>
+
+  <script>
+    $(function() {
+      $(".alert-pedido").hide();
+
+      $('.lit').tooltip({ boundary: 'window' }).css({ marginBottom: '10%' });
+
+      $(".pedido").click(function() {
+        $(".alert-pedido").show();
+        setInterval( $(function() { window.location.href = "index.html" }) , 20000);  
+      });
+
+    });
+  </script>
+
+</body>
+</html>

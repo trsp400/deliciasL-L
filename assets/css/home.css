@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+html,body,#container{
+    height: 100%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    
+    background-color: #ffffff !important;
+    -webkit-font-smoothing: antialiased;
+}
+.bg-light{
+    background-color: #ffffff !important;
+}
+
+.container{
+    margin: 0 auto;
+    padding: 0 !important;
+
+}
+body,input,button{
+    font-family: Roboto, sans-serif;
+}
+.navbar{
+    
+    background-color: #ffffff !important;
+    color: black  !important;
+}
+
+
+
+
+#logo-center{
+    align-self: center;
+    margin: 0;
+    padding: 0%;
+    width: 15% !important;
+    height: 30% !important;
+}
+main{
+    flex: 1;
+    margin-top: 5%;
+}
+
+.img-fluid{
+    
+    margin: 0 auto;
+    width: 50%;
+    height: 100%;
+}
+
+.card .mb-3{
+    width: 50%;
+
+}
+
+.card .bg-dark .text-white{
+    width: 50%;
+}
+
+
+
+
+
+.jumbotron{
+    margin:3%;
+}
+
+#bOutline{
+    width: 120px !important;
+    height: 60px !important;
+}
+
+
+#contato{
+    
+    color: #007bff;
+    border-color: #007bff;
+    float: right !important;
+}
+#contato:hover{
+    color: white;
+    background-color: #007bff;
+}

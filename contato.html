@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Delícias L & L</title>
+
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/contato.css">
+
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="assets/js/alert.js"></script>
+
+    <script>
+        function fContato(){
+            window.location.href = "contato.html";
+        }
+
+    </script>
+
+</head>
+<body class="d-flex flex-column h-100">
+    <div class="container">
+        
+        
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <img src="assets/images/logo.jpg" class="img-fluid" id='logo-center' alt="Responsive image">
+            <a class="navbar-brand" href="index.html">Delícias L&L</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                <a class="nav-link" href="index.html">Início<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="doces.html">Doces</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="galeria.html">Galeria</a>
+                </li>
+                
+                <li class="nav-item">
+                <a class="nav-link" href="sobre.html">Sobre</a>
+                </li>
+
+                <li class="nav-item" style="margin-right: 4px;" >
+                    <button type="button" class="btn btn-outline-primary" id="contato" onclick="javascript:fContato()" >Entre em contato</button>
+                    
+                </li>
+                <li class="nav-item" >                        
+                    <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#modal-login" >Faça o Login</button>
+                </li>
+            </div>
+        </nav>
+        <main>
+            <form>
+
+                <div class="alert alert-warning alert-warning-contato alert-dismissible fade show" role="alert" style="margin-top: 5%;">
+                    <strong>Erro</strong> Preencha todos os campos para prosseguir.
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="alert alert-success alert-success-contato alert-dismissible fade show" role="alert" style="margin-top: 5%;">
+                    <strong>Sucesso!</strong> Entratemos em contato com você em breve.
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputCity">Nome</label>
+                        <input type="text" class="form-control" placeholder="">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputCity">Email de contato</label>
+                        <input type="text" class="form-control"  placeholder="ex.: nome@seuemail.com.br">
+                    </div>
+                    
+                </div>
+                    
+
+                <div class="form-group">
+                    
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputPhone">Celular</label>
+                            <input type="number" class="form-control" id="inputPhone" placeholder="ex.: (xx) 9xxxx-xxxx">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="exampleFormControlSelect1">Sobre o que deseja falar</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option>Selecione</option>
+                                <option>Kits para festas</option>
+                                <option>Kits individuais</option>
+                                <option>Porções Inidivuais</option>
+                                <option>Trufas</option>
+                                <option>Tortas</option>
+                                <option>Ovos de Páscoa</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputCity">Cidade</label>
+                            <input type="text" class="form-control" id="" placeholder="ex.: Duque de Caxias">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputState">Estado</label>
+                            <select id="inputState" class="form-control">
+                                <option selected>Selecione</option>
+                                <option>Rio de Janeiro</option>
+                                <option>São Paulo</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Descreva mais detalhadamente o que deseja</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder="ex.: 100 trufas, 50 tortinhas, etc"></textarea>
+                </div>
+                <button type="button" class="btn btn-success" style="float: right;">Enviar informações</button>        
+            </form>
+            
+            
+
+        </main>
+        
+    </div>
+
+    <!--TELA MODAL DE LOGIN -->
+    <div class="modal fade" id="modal-login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Realizar Login</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Usuário ou Email</label>
+                        <input type="email" class="form-control" id="user" aria-describedby="emailHelp">
+                        <small id="emailHelp" class="form-text text-muted">Nós nunca vamos compartilhar seu email com outras pessoas</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Senha</label>
+                        <input type="password" class="form-control" id="senha">
+                    </div>
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Permanecer logado?</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="login-submit">Fazer Login</button>
+                </form>
+  
+                <div class="alert alert-warning alert-dismissible fade show" role="alert" id="alert-login-user" style="margin-top: 2%;">
+                    <strong>Erro!</strong> Preencha o campo <strong>Usuário</strong>.
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="alert alert-warning alert-dismissible fade show" role="alert" id="alert-login-senha" style="margin-top: 2%;">
+                    <strong>Erro!</strong> Preencha o campo <strong>Senha</strong>.
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="alert alert-success alert-dismissible fade show" role="alert" id="alert-success" style="margin-top: 2%;">
+                    <strong>Sucesso!</strong> Realizando login...
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-info" data-target="#modal-cadastro" data-dismiss="modal" id="sem-conta">Não possui conta?</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Sair</button> 
+            </div>
+            </div>
+        </div>
+      </div>
+  
+      <!-- MODAL CADASTRO -->
+      <div class="modal fade" id="modal-cadastro" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalScrollableTitle">Realizar Cadastro</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Usuário</label>
+                    <input type="email" class="form-control" id="user-cadastro" aria-describedby="emailHelp">
+                    <small id="emailHelp" class="form-text text-muted">Sem espaços ou letras maiúsculas</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email</label>
+                  <input type="email" class="form-control" id="email-cadastro" aria-describedby="emailHelp">
+                  <small id="emailHelp" class="form-text text-muted">Nós nunca vamos compartilhar seu email com outras pessoas</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Whatsapp</label>
+                  <input type="email" class="form-control" id="telefone" aria-describedby="emailHelp">
+                  <small id="emailHelp" class="form-text text-muted">Número para contato</small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Senha</label>
+                    <input type="password" class="form-control" id="senha-cadastro">
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" >
+                    <label class="form-check-label" for="exampleCheck1">Permanecer logado?</label>
+                </div>
+                <button type="submit" class="btn btn-primary" id="cadastro-submit">Cadastrar</button>
+              </form>
+  
+              <div class="alert alert-warning alert-dismissible fade show" role="alert" id="alert-cadastro" style="margin-top: 2%; margin-bottom: 5%;">
+                <strong>Erro!</strong> Preencha todos os campos!
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="alert alert-success alert-dismissible fade show" role="alert" id="alert-success-cadastro" style="margin-top: 2%; margin-bottom: 5%;">
+                <strong>Sucesso!</strong> Conta Criada! Clique no botão abaixo para Realizar o Login.
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-info" data-target="#modal-cadastro" data-dismiss="modal" id="com-conta">Já possui conta?</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Sair</button> 
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <div class="foot"></div>
+
+    <script src="assets/js/alert.js">
+    </script>
+
+
+    <script>
+      $(function(){
+    $(".alert-success-contato").hide();
+    $(".alert-warning-contato").hide();
+
+    
+    $(".btn-success").click(function(){
+        
+        if  ( $("#inputPhone").val() == ""  | $("#exampleFormControlSelect1").val() == "Selecione"){
+            $(".alert-warning-contato").show();
+            $(".alert-success-contato").hide();
+        }else{
+            $(".alert-success-contato").show();
+            $(".alert-warning-contato").hide();
+        }
+    })
+
+});
+    </script>
+</body>
+</html>
